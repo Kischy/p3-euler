@@ -127,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Factorize.h" />
+    <ClInclude Include="src\helping_functions.h" />
     <ClInclude Include="src\PrimeChecker.h" />
     <ClInclude Include="src\RememberNumbers.h" />
     <ClInclude Include="src\IRememberNumbers.h" />
