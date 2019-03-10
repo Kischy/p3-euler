@@ -13,8 +13,14 @@ class PrimeChecker
 public:
 	bool is_prime_number(unsigned long long number) 
 	{
-		return is_prime(number);
+		return remember_primes.calc_and_get_number(number);
 	}
+
+
+	
+private:
+	RememberNumbers<unsigned long long, bool> remember_primes{ &PrimeChecker::is_prime };
+
 
 	static bool is_prime(unsigned long long number)
 	{
@@ -22,18 +28,11 @@ public:
 
 		return is_a_prime_higher_three(number);
 	}
-	
-private:
-	RememberNumbers<unsigned long long, bool> remember_primes{ &PrimeChecker::is_prime };
-
-
 
 	static bool is_divisable(unsigned long long number, unsigned long long divisor) 
 	{
 		return (number % divisor) == 0;
 	}
-
-
 
 	static bool numbers_until_three(unsigned long long number) 
 	{
