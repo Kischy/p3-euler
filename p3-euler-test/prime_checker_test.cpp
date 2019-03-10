@@ -32,5 +32,11 @@ TEST_F(PrimeCheckerTesting, FiveIsAPrime) {
 	ASSERT_TRUE(primechecker.is_prime_number(5));
 }
 
+TEST_F(PrimeCheckerTesting, AdditionalPrimeNumberTests) {
+	ASSERT_TRUE(primechecker.is_prime_number(11));
+	ASSERT_TRUE(primechecker.is_prime_number(17));
+	ASSERT_FALSE(primechecker.is_prime_number(21));
+}
+
 
 
