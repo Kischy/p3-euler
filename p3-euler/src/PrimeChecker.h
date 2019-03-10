@@ -16,7 +16,7 @@ public:
 		return is_prime(number);
 	}
 
-	bool is_prime(unsigned long long number)
+	static bool is_prime(unsigned long long number)
 	{
 		if (number <= 3) return numbers_until_three(number);
 
@@ -24,16 +24,16 @@ public:
 	}
 
 private:
-	//RememberNumbers<unsigned long long, bool> remember_primes{ is_prime };
+	RememberNumbers<unsigned long long, bool> remember_primes{ &PrimeChecker::is_prime };
 
-	bool is_divisable(unsigned long long number, unsigned long long divisor) const
+	static bool is_divisable(unsigned long long number, unsigned long long divisor) 
 	{
 		return (number % divisor) == 0;
 	}
 
 
 
-	bool numbers_until_three(unsigned long long number) const
+	static bool numbers_until_three(unsigned long long number) 
 	{
 		if (number == 2 || number == 3) return true;
 
@@ -41,7 +41,7 @@ private:
 	}
 
 
-	bool is_a_prime_higher_three(unsigned long long number) const
+	static bool is_a_prime_higher_three(unsigned long long number) 
 	{
 		unsigned long long upper = get_upper_limit(number);
 
@@ -53,7 +53,7 @@ private:
 		return true;
 	}
 
-	unsigned long long get_upper_limit(unsigned long long number) const
+	static unsigned long long get_upper_limit(unsigned long long number) 
 	{
 		return static_cast<unsigned long long>( std::sqrt(number) + 1);
 	}
