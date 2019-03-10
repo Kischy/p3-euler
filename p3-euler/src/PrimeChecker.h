@@ -22,9 +22,11 @@ public:
 
 		return is_a_prime_higher_three(number);
 	}
-
+	
 private:
 	RememberNumbers<unsigned long long, bool> remember_primes{ &PrimeChecker::is_prime };
+
+
 
 	static bool is_divisable(unsigned long long number, unsigned long long divisor) 
 	{
