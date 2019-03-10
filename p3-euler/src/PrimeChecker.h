@@ -3,7 +3,6 @@
 
 #include <cmath>
 
-#include "RememberNumbers.h"
 
 
 class PrimeChecker
@@ -13,15 +12,11 @@ public:
 	{
 		if (number <= 3) return numbers_until_three(number);
 
-
-
-
 		return is_a_prime_higher_three(number);
 	}
 
 
 private:
-	RememberNumbers<unsigned long long, bool> remember_prime_numbers;
 
 
 	bool is_divisable(unsigned long long number, unsigned long long divisor) const
