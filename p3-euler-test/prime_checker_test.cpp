@@ -24,3 +24,13 @@ TEST_F(PrimeCheckerTesting, ThreeIsAPrime) {
 }
 
 
+TEST_F(PrimeCheckerTesting, FourIsNotAPrime) {
+	ASSERT_FALSE(primechecker.is_prime_number(4));
+}
+
+TEST_F(PrimeCheckerTesting, FiveIsAPrime) {
+	ASSERT_TRUE(primechecker.is_prime_number(5));
+}
+
+
+
