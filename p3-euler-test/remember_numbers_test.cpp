@@ -9,8 +9,8 @@ public:
 };
 
 
-TEST_F(RememberNumbersCheckerInt, TestIfOneOrZeroIsAPrimeNumber) {
-	//ASSERT_FALSE(primechecker.is_prime_number(0));
+TEST_F(RememberNumbersCheckerInt, EmptyClassHasNoNumberSaved) {
+	ASSERT_FALSE(remembersnumbers_intint.number_has_been_saved(0));
 }
 
 
