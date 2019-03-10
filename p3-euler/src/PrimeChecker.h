@@ -46,9 +46,9 @@ private:
 		return true;
 	}
 
-	long long get_upper_limit(unsigned long long number) const
+	unsigned long long get_upper_limit(unsigned long long number) const
 	{
-		return std::sqrt(number) + 1;
+		return static_cast<unsigned long long>( std::sqrt(number) + 1);
 	}
 
 
