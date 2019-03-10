@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include "PrimeChecker.h"
+
 
 using namespace std;
 

@@ -20,7 +20,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\prime_checker.h">
+    <ClInclude Include="src\PrimeChecker.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

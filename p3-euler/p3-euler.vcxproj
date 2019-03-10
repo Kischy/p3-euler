@@ -83,7 +83,7 @@
     <PostBuildEvent>
       <Message>
       </Message>
-      <Command>git commit -am "Succesful build at $(date -u +'%Y.%m.%d %H:%M:%S')"</Command>
+      <Command>git commit -am "Succesful build at %TIME%"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -126,7 +126,7 @@
     <ClCompile Include="src\p3_euler_main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\prime_checker.h" />
+    <ClInclude Include="src\PrimeChecker.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
