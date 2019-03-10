@@ -18,6 +18,9 @@ public:
 
 
 private:
+	RememberNumbers<unsigned long long, bool> remember_prime_numbers;
+
+
 	bool is_divisable(unsigned long long number, unsigned long long divisor) const
 	{
 		return (number % divisor) == 0;
@@ -49,7 +52,6 @@ private:
 	}
 
 
-	//RememberNumbers<unsigned long long, bool> remember_prime_numbers;
 
 
 };
