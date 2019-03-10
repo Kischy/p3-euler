@@ -83,7 +83,7 @@
     <PostBuildEvent>
       <Message>
       </Message>
-      <Command>git commit -am "Succesful build at day: __DATE__ time: __TIME__"</Command>
+      <Command>git commit -am "Succesful build at time: %TIME%"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
