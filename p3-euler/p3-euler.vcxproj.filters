@@ -26,5 +26,8 @@
     <ClInclude Include="src\RememberNumbers.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="src\IRememberNumbers.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -128,6 +128,7 @@
   <ItemGroup>
     <ClInclude Include="src\PrimeChecker.h" />
     <ClInclude Include="src\RememberNumbers.h" />
+    <ClInclude Include="src\IRememberNumbers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
