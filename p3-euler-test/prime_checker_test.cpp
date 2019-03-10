@@ -18,3 +18,9 @@ TEST_F(PrimeCheckerTesting, TestIfOneOrZeroIsAPrimeNumber) {
 TEST_F(PrimeCheckerTesting, TwoIsAPrimeNUmber) {
 	ASSERT_TRUE(primechecker.is_prime_number(2));
 }
+
+TEST_F(PrimeCheckerTesting, ThreeIsAPrime) {
+	ASSERT_TRUE(primechecker.is_prime_number(3));
+}
+
+
