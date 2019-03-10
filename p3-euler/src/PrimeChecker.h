@@ -11,21 +11,21 @@
 class PrimeChecker
 {
 public:
-	bool is_prime_number(unsigned long long number) const
+	bool is_prime_number(unsigned long long number) 
 	{
 		return is_prime(number);
 	}
 
 
 private:
-	//RememberNumbers<unsigned long long, bool> remember_primes{};
+	//RememberNumbers<unsigned long long, bool> remember_primes{ is_prime };
 
 	bool is_divisable(unsigned long long number, unsigned long long divisor) const
 	{
 		return (number % divisor) == 0;
 	}
 
-	bool is_prime(unsigned long long number) const
+	bool is_prime(unsigned long long number) 
 	{
 		if (number <= 3) return numbers_until_three(number);
 
