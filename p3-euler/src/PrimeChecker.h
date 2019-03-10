@@ -13,7 +13,7 @@ class PrimeChecker
 public:
 	bool is_prime_number(unsigned long long number) const
 	{
-		is_prime(number);
+		return is_prime(number);
 	}
 
 
