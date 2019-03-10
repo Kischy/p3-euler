@@ -49,7 +49,7 @@ private:
 	}
 
 
-	RememberNumbers<unsigned long long, bool> remember_prime_numbers;
+	//RememberNumbers<unsigned long long, bool> remember_prime_numbers;
 
 
 };
