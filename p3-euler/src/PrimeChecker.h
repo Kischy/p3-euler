@@ -13,6 +13,9 @@ public:
 	{
 		if (number <= 3) return numbers_until_three(number);
 
+
+
+
 		return is_a_prime_higher_three(number);
 	}
 

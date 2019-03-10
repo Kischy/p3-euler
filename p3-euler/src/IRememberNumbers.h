@@ -1,5 +1,6 @@
 #pragma once
 
+#include <functional>
 
 
 template <typename T_key, typename T_value>
