@@ -1,6 +1,15 @@
 #include "pch.h"
 
-TEST(TestCaseName, TestName) {
-  EXPECT_EQ(1, 1);
-  EXPECT_TRUE(true);
+#include "../p3-euler/src/PrimeChecker.h"
+
+
+public PrimeCheckerTesting : public testing::Test
+{
+	PrimeChecker primechecker;
+}
+
+
+
+TEST_F(PrimeCheckerTesting, TestsIfPrimeCheckerExists) {
+
 }
