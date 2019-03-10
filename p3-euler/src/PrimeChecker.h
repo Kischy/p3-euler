@@ -3,6 +3,8 @@
 
 #include <cmath>
 
+#include "RememberNumbers.h"
+
 
 class PrimeChecker
 {
@@ -45,6 +47,9 @@ private:
 	{
 		return std::sqrt(number) + 1;
 	}
+
+
+	RememberNumbers<unsigned long long, bool> remember_prime_numbers;
 
 
 };
