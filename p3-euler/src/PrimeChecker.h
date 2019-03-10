@@ -4,24 +4,32 @@
 #include <cmath>
 
 
+#include "RememberNumbers.h"
+
+
 
 class PrimeChecker
 {
 public:
 	bool is_prime_number(unsigned long long number) const
 	{
-		if (number <= 3) return numbers_until_three(number);
-
-		return is_a_prime_higher_three(number);
+		is_prime(number);
 	}
 
 
 private:
-
+	//RememberNumbers<unsigned long long, bool> remember_primes{};
 
 	bool is_divisable(unsigned long long number, unsigned long long divisor) const
 	{
 		return (number % divisor) == 0;
+	}
+
+	bool is_prime(unsigned long long number) const
+	{
+		if (number <= 3) return numbers_until_three(number);
+
+		return is_a_prime_higher_three(number);
 	}
 
 	bool numbers_until_three(unsigned long long number) const
