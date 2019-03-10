@@ -16,6 +16,12 @@ public:
 		return is_prime(number);
 	}
 
+	bool is_prime(unsigned long long number)
+	{
+		if (number <= 3) return numbers_until_three(number);
+
+		return is_a_prime_higher_three(number);
+	}
 
 private:
 	//RememberNumbers<unsigned long long, bool> remember_primes{ is_prime };
@@ -25,12 +31,7 @@ private:
 		return (number % divisor) == 0;
 	}
 
-	bool is_prime(unsigned long long number) 
-	{
-		if (number <= 3) return numbers_until_three(number);
 
-		return is_a_prime_higher_three(number);
-	}
 
 	bool numbers_until_three(unsigned long long number) const
 	{
