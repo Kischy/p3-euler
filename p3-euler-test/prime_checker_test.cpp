@@ -13,3 +13,8 @@ TEST_F(PrimeCheckerTesting, TestIfOneOrZeroIsAPrimeNumber) {
 	ASSERT_FALSE(primechecker.is_prime_number(0));
 	ASSERT_FALSE(primechecker.is_prime_number(1));
 }
+
+
+TEST_F(PrimeCheckerTesting, TwoIsAPrimeNUmber) {
+	ASSERT_TRUE(primechecker.is_prime_number(2));
+}
