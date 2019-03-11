@@ -13,6 +13,12 @@ public:
 	std::vector<unsigned long long> factorize(unsigned long long number) 
 	{
 		intern_factors.clear();
+			
+		if (is_number_to_low(number) == true)
+		{
+			intern_factors.push_back(number);
+			return intern_factors;
+		}
 
 		factor_to_intern_vector(number);
 
@@ -24,6 +30,14 @@ public:
 private:
 	PrimeChecker primechecker;
 	std::vector<unsigned long long> intern_factors;
+	
+	bool is_number_to_low(unsigned long long number)
+	{
+		if (number <= 3)
+			return true;
+
+		return false;
+	}
 
 
 	void factor_to_intern_vector(unsigned long long number)

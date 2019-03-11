@@ -11,9 +11,9 @@ int main(int argc, char **argv)
 	
 	Factorize factorize;
 	
-	//std::vector<unsigned long long>	prime_factors = factorize.factorize(600851475143);
-	//std::vector<unsigned long long>	prime_factors = factorize.factorize(600851475814309897);
-	std::vector<unsigned long long>	prime_factors = factorize.factorize(1);
+	std::vector<unsigned long long>	prime_factors = factorize.factorize(600851475143);
+	//std::vector<unsigned long long>	prime_factors = factorize.factorize(9008521475814309897);
+	//std::vector<unsigned long long>	prime_factors = factorize.factorize(1);
 
 
 	for (auto prime : prime_factors)

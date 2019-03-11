@@ -54,5 +54,9 @@ TEST_F(FactorizeChecker, HandelingOfLowNumbers)
 {
 	std::vector<unsigned long long> factors = { 2 };
 	ASSERT_EQ(factorize.factorize(2), factors);
+	std::vector<unsigned long long> factors2 = { 1 };
+	ASSERT_EQ(factorize.factorize(1), factors2);
+	std::vector<unsigned long long> factor3 = { 0 };
+	ASSERT_EQ(factorize.factorize(0), factor3);
 }
 
