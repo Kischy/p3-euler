@@ -3,6 +3,9 @@
 #include <vector>
 #include "PrimeChecker.h"
 
+
+
+
 class Factorize
 {
 public:
@@ -20,10 +23,26 @@ public:
 
 private:
 	PrimeChecker primechecker;
-
 	std::vector<unsigned long long> intern_factors;
 
+
 	void factor_to_intern_vector(unsigned long long number)
+	{
+
+		while (primechecker.is_prime_number(number) == false)
+		{
+			unsigned long long lowest = find_lowest_prime_factor(number);
+			intern_factors.push_back(lowest);
+			number /= lowest;
+		}
+				
+		//This is the last prime factor
+		intern_factors.push_back(number);
+	}
+
+
+
+	unsigned long long find_lowest_prime_factor(unsigned long long number)
 	{
 		for (unsigned long long i = 2; i <= number; ++i)
 		{
@@ -31,12 +50,10 @@ private:
 			{
 				if (is_divisable(number, i) == true)
 				{
-					intern_factors.push_back(i);
-					number /= i;
+					return i;
 				}
 			}
 		}
-		
 	}
 
 

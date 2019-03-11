@@ -32,8 +32,5 @@
     <ClInclude Include="src\Factorize.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="src\helping_functions.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

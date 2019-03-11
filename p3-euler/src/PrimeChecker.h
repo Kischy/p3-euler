@@ -8,6 +8,7 @@
 
 
 
+
 class PrimeChecker
 {
 public:
@@ -29,10 +30,6 @@ private:
 		return is_a_prime_higher_three(number);
 	}
 
-	static bool is_divisable(unsigned long long number, unsigned long long divisor) 
-	{
-		return (number % divisor) == 0;
-	}
 
 	static bool numbers_until_three(unsigned long long number) 
 	{
@@ -60,6 +57,11 @@ private:
 	}
 
 
+
+	static bool is_divisable(unsigned long long number, unsigned long long divisor)
+	{
+		return (number % divisor) == 0;
+	}
 
 
 };

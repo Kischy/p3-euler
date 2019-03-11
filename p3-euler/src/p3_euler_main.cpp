@@ -1,19 +1,30 @@
 #include <iostream>
 
-#include "PrimeChecker.h"
+#include "Factorize.h"
 
-
-using namespace std;
 
 
 int main(int argc, char **argv)
 {
 
-	int p3_answer = 0;
+	unsigned long long p3_answer = 0;
+	
+	Factorize factorize;
+	
+	//std::vector<unsigned long long>	prime_factors = factorize.factorize(600851475143);
+	//std::vector<unsigned long long>	prime_factors = factorize.factorize(600851475814309897);
+	std::vector<unsigned long long>	prime_factors = factorize.factorize(1);
 
 
-	cout << "The answer to the third problem of ProjectEuler.net is: " << p3_answer << endl;
-	   
+	for (auto prime : prime_factors)
+	{
+		if (prime > p3_answer) p3_answer = prime;
+
+		std::cout << prime << "\t";
+	}
+
+	std::cout << "\n";
+	std::cout << "The answer to the third problem of ProjectEuler.net is: " << p3_answer << std::endl;
 
 
 

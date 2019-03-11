@@ -30,9 +30,29 @@ TEST_F(FactorizeChecker, FactorizationOfSix)
 }
 
 
-TEST_F(FactorizeChecker, FactorizationOf2313214)
+TEST_F(FactorizeChecker, FactorizationOf32134)
 {
-	std::vector<unsigned long long> factors = { 2 , 29 , 39883 };
-	ASSERT_EQ(factorize.factorize(2313214), factors);
+	std::vector<unsigned long long> factors = { 2,16067 };
+	ASSERT_EQ(factorize.factorize(32134), factors);
+}
+
+
+TEST_F(FactorizeChecker, FactorizationOf23132)
+{
+	std::vector<unsigned long long> factors = { 2,2,5783 };
+	ASSERT_EQ(factorize.factorize(23132), factors);
+}
+
+TEST_F(FactorizeChecker, FactorizationOf36)
+{
+	std::vector<unsigned long long> factors = { 2,2,3,3 };
+	ASSERT_EQ(factorize.factorize(36), factors);
+}
+
+
+TEST_F(FactorizeChecker, HandelingOfLowNumbers)
+{
+	std::vector<unsigned long long> factors = { 2 };
+	ASSERT_EQ(factorize.factorize(2), factors);
 }
 
